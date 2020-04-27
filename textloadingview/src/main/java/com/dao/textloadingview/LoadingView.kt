@@ -23,6 +23,9 @@ class LoadingView : View {
     private var text: String = "文字动画"
     private var textSize = dip2Px(45f)
     private var textColor = "#9B9B9B"
+    private var isInfinite = true
+    // 动画
+    private var annotation = ValueAnimator()
     // 线条宽度
     private var lineWidth = dip2Px(15f)
     // 偏移距离
@@ -57,15 +60,21 @@ class LoadingView : View {
     }
 
     fun startAnimation() {
-        val annotation = ObjectAnimator.ofFloat(dip2Px(0f),
+        annotation = ObjectAnimator.ofFloat(dip2Px(0f),
             bounds.right - bounds.left + offsetDistance)
         annotation.duration = animationTime.toLong()
-        annotation.repeatCount = ValueAnimator.INFINITE
+        if (isInfinite){
+            annotation.repeatCount = ValueAnimator.INFINITE
+        }
         annotation.addUpdateListener {
             movingDistance = it.animatedValue as Float
             invalidate()
         }
         annotation.start()
+    }
+
+    fun stopAnimation(){
+        annotation.cancel()
     }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
@@ -120,6 +129,13 @@ class LoadingView : View {
      */
     fun setOffsetDistance(offsetDistance: Float) {
         this.offsetDistance = offsetDistance
+        invalidate()
+    }
+    /**
+     * 是否循环 默认为true
+     */
+    fun setIsInfinite(isInfinite: Boolean) {
+        this.isInfinite = isInfinite
         invalidate()
     }
 

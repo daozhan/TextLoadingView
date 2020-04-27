@@ -12,5 +12,8 @@ class MainActivity : AppCompatActivity() {
         start.setOnClickListener{
             text_loading_view.startAnimation()
         }
+        stop.setOnClickListener{
+            text_loading_view.stopAnimation()
+        }
     }
 }

@@ -15,5 +15,7 @@
         <attr name="loadingTextLineWidth" format="dimension"/>
         <!--移动线条偏移距离-->
         <attr name="loadingTextOffsetDistance" format="dimension"/>
+        <!--是否循环-->
+        <attr name="loadingTextIsInfinite" format="boolean"/>
     </declare-styleable>
 </resources>

@@ -16,15 +16,28 @@
             textloadingview:loadingTextSize="45dp"
             textloadingview:loadingTextAnimationTime="1500"
             textloadingview:loadingTextLineWidth="25dp"
+            textloadingview:loadingTextIsInfinite="true"
             textloadingview:loadingTextOffsetDistance="35dp"/>
 
-    <Button
-            android:id="@+id/start"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:text="开始"/>
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/start"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="开始"/>
+
+        <Button
+                android:id="@+id/stop"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="停止"/>
+    </LinearLayout>
 
 
 </RelativeLayout>

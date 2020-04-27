@@ -32,6 +32,8 @@ class TextLoadingView : FrameLayout {
         val lineWidth = custom?.getDimension(R.styleable.TextLoadingView_loadingTextLineWidth, dip2Px(15f))
         // 移动线条偏移距离
         val offsetDistance = custom?.getDimension(R.styleable.TextLoadingView_loadingTextOffsetDistance, dip2Px(25f))
+        // 是否循环 默认为true
+        val isInfinite = custom?.getBoolean(R.styleable.TextLoadingView_loadingTextIsInfinite, true)
         textView.text = text.toString()
         loadingView.setLoadingText(text.toString())
         if (textSize != null) {
@@ -49,6 +51,9 @@ class TextLoadingView : FrameLayout {
         if (offsetDistance != null) {
             loadingView.setOffsetDistance(offsetDistance)
         }
+        if (isInfinite != null) {
+            loadingView.setIsInfinite(isInfinite)
+        }
     }
 
     init {
@@ -61,6 +66,13 @@ class TextLoadingView : FrameLayout {
      */
     fun startAnimation() {
         loadingView.startAnimation()
+    }
+
+    /**
+     * 停止动画
+     */
+    fun stopAnimation() {
+        loadingView.stopAnimation()
     }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
