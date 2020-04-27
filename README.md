@@ -1,9 +1,7 @@
 # TextLoadingView
 TextLoadingView-文字滚动加载动画-仿虎扑页面加载动画
 
-```
 [![](https://jitpack.io/v/daozhan/TextLoadingView.svg)](https://jitpack.io/#daozhan/TextLoadingView)
-```
 
 ## 效果图
 
