@@ -103,6 +103,7 @@ class LoadingView : View {
     fun setLoadingTextSize(textSize: Float) {
         this.textSize = textSize
         textPaint.textSize = textSize
+        textPaint.getTextBounds(text, 0, text.length, bounds)
         invalidate()
     }
 
