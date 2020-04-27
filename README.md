@@ -1,7 +1,7 @@
 # TextLoadingView
 TextLoadingView-文字滚动加载动画-仿虎扑页面加载动画
 
-[![](https://jitpack.io/v/daozhan/TextLoadingView.svg)](https://jitpack.io/#daozhan/TextLoadingView)[![作者\]([https://img.shields.io/badge/%E4%BD%9C%E8%80%85-idaozhan-blue](https://img.shields.io/badge/作者-idaozhan-blue).svg)\](https://daozhan.github.io/)
+[![](https://jitpack.io/v/daozhan/TextLoadingView.svg)](https://jitpack.io/#daozhan/TextLoadingView)[![](https://img.shields.io/badge/%E4%BD%9C%E8%80%85-idaozhan-blue)](https://daozhan.github.io/)
 
 ## 效果图
 
