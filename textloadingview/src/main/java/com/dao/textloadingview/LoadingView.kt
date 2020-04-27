@@ -23,7 +23,10 @@ class LoadingView : View {
     private var text: String = "文字动画"
     private var textSize = dip2Px(45f)
     private var textColor = "#9B9B9B"
+    // 是否循环
     private var isInfinite = true
+    // 默认开启动画
+    private var isStartAnimation = true
     // 动画
     private var annotation = ValueAnimator()
     // 线条宽度
@@ -88,6 +91,10 @@ class LoadingView : View {
         this.text = text
         textPaint.getTextBounds(text, 0, text.length, bounds)
         invalidate()
+        if (isStartAnimation){
+            // 开始动画
+            this.startAnimation()
+        }
     }
 
     /**
@@ -131,11 +138,23 @@ class LoadingView : View {
         this.offsetDistance = offsetDistance
         invalidate()
     }
+
     /**
      * 是否循环 默认为true
      */
     fun setIsInfinite(isInfinite: Boolean) {
         this.isInfinite = isInfinite
+        invalidate()
+    }
+
+    /**
+     * 是否自动开始 默认为true
+     */
+    fun setIsStartAnimation(isStartAnimation: Boolean) {
+        this.isStartAnimation = isStartAnimation
+        if (!isStartAnimation){
+            annotation.cancel()
+        }
         invalidate()
     }
 

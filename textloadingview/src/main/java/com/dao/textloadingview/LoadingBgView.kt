@@ -20,7 +20,7 @@ import org.w3c.dom.Text
 class LoadingBgView : View {
     private val textPaint = TextPaint()
     private val bounds = Rect()
-    var text = "药实在"
+    var text = "文字动画"
     var textSize = 45f
     var textColor = "#D1D1D1"
 

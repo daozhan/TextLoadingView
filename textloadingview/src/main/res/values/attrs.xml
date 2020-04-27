@@ -17,5 +17,7 @@
         <attr name="loadingTextOffsetDistance" format="dimension"/>
         <!--是否循环-->
         <attr name="loadingTextIsInfinite" format="boolean"/>
+        <!--是否自动开始-->
+        <attr name="loadingTextIsStartAnimation" format="boolean"/>
     </declare-styleable>
 </resources>

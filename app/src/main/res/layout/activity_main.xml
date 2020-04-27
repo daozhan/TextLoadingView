@@ -13,11 +13,12 @@
             textloadingview:loadingText="文字加载动画"
             textloadingview:loadingTextTopColor="#4BADE6"
             textloadingview:loadingTextBgColor="#CCCCCC"
-            textloadingview:loadingTextSize="45dp"
+            textloadingview:loadingTextSize="45sp"
             textloadingview:loadingTextAnimationTime="1500"
             textloadingview:loadingTextLineWidth="25dp"
             textloadingview:loadingTextIsInfinite="true"
-            textloadingview:loadingTextOffsetDistance="35dp"/>
+            textloadingview:loadingTextOffsetDistance="35dp"
+            textloadingview:loadingTextIsStartAnimation="false"/>
 
     <LinearLayout
             android:layout_width="wrap_content"
