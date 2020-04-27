@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextLoadingView">
+        <!--文字内容-->
+        <attr name="loadingText" format="string"/>
+        <!--文字大小-->
+        <attr name="loadingTextSize" format="dimension"/>
+        <!--文字背景颜色-->
+        <attr name="loadingTextBgColor" format="color"/>
+        <!--移动线条文字颜色-->
+        <attr name="loadingTextTopColor" format="color"/>
+        <!--动画时间-->
+        <attr name="loadingTextAnimationTime" format="integer"/>
+        <!--移动线条宽度-->
+        <attr name="loadingTextLineWidth" format="dimension"/>
+        <!--移动线条偏移距离-->
+        <attr name="loadingTextOffsetDistance" format="dimension"/>
+    </declare-styleable>
+</resources>

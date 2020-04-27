@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:textloadingview="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.dao.textloadingview.TextLoadingView
+            android:id="@+id/text_loading_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            textloadingview:loadingText="文字加载动画"
+            textloadingview:loadingTextTopColor="#4BADE6"
+            textloadingview:loadingTextBgColor="#CCCCCC"
+            textloadingview:loadingTextSize="45dp"
+            textloadingview:loadingTextAnimationTime="1500"
+            textloadingview:loadingTextLineWidth="25dp"
+            textloadingview:loadingTextOffsetDistance="35dp"/>
+
+    <Button
+            android:id="@+id/start"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="开始"/>
+
+
+</RelativeLayout>
