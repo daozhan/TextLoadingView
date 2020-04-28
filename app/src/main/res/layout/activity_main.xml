@@ -11,8 +11,6 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             textloadingview:loadingText="文字加载动画"
-            textloadingview:loadingTextTopColor="#4BADE6"
-            textloadingview:loadingTextBgColor="#CCCCCC"
             textloadingview:loadingTextSize="25sp"
             textloadingview:loadingTextAnimationTime="1500"
             textloadingview:loadingTextLineWidth="25dp"

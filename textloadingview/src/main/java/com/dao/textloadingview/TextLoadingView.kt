@@ -36,14 +36,21 @@ class TextLoadingView : FrameLayout {
         val isInfinite = custom?.getBoolean(R.styleable.TextLoadingView_loadingTextIsInfinite, true)
         // 是否自动开始 默认为true
         val isStartAnimation = custom?.getBoolean(R.styleable.TextLoadingView_loadingTextIsStartAnimation, true)
-        textView.text = text.toString()
-        loadingView.setLoadingText(text.toString())
+        if(text != null){
+            textView.text = text.toString()
+            loadingView.setLoadingText(text.toString())
+        }
         if (textSize != null) {
             textView.setLoadingBgTextSize(textSize)
             loadingView.setLoadingTextSize(textSize)
         }
-        textView.setLoadingBgTextColor(textBgColor.toString())
-        loadingView.setLoadingTextColor(textTopColor.toString())
+        if (textBgColor != null) {
+            textView.setLoadingBgTextColor(textBgColor.toString())
+
+        }
+        if (textTopColor != null) {
+            loadingView.setLoadingTextColor(textTopColor.toString())
+        }
         if (animationTime != null) {
             loadingView.setLoadingAnimationTime(animationTime)
         }
